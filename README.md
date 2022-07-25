@@ -5,7 +5,7 @@
 <h4>Keyword: Spring Boot, Angular, REST FULL API, API integration</h4>
 
 
-This a simple and  basic banking Web developed <strong>eBankWeb_Angular</strong> developped using angular (TypeScript) As front End and Spring Boot as the BackEnd which incorporates some basic utilities (fonctions) of a web modern banking 
+This a simple and  basic Banking Web (<strong>eBankWeb_Angular</strong>) developed using angular (TypeScript) As front End and Spring Boot as the BackEnd which incorporates some basic utilities (fonctions) of a web modern banking 
  
 <h4>HOW TO USE THIS PROJECT ? </h4>
 
