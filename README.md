@@ -1,4 +1,4 @@
-# EShopWebAngular
+# eBankWeb_Angular
 
 <h3>*This is an simple Angular FrontEnd web.* </h3>
 
