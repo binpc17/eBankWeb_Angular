@@ -1,0 +1,26 @@
+<div class="container">
+  <!-- offset-3 MEANS To center the boostrap div-->
+  <div class="card col-md-6 offset-3 mt-2" *ngIf="newCustomerformGroup">
+    <div class="card-header">New Customer</div>
+    <div class="card-body">
+      <form [formGroup]="newCustomerformGroup" (ngSubmit)="handleSaveCustomer()">
+        <div class="mb-3">
+          <label class="form-label">Name :</label>
+          <input type="text" formControlName="name" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email :</label>
+          <input type="email" formControlName="email" class="form-control">
+          <!-- Message form Validators
+          <ng-container *ngIf="newCustomerformGroup!=null && newCustomerformGroup.controls['name'].touched && newCustomerformGroup.controls['name'].errors['required']">
+          <span>
+            Name is required
+          </span>
+          </ng-container>  -->
+        </div>
+        <button [disabled]="!newCustomerformGroup.valid" class="btn btn-success">Save</button>
+      </form>
+    </div>
+  </div>
+
+</div>

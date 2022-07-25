@@ -1,0 +1,46 @@
+<div class="container mt-2">
+  <div *ngIf="errorMessage" class="text-danger"> {{errorMessage | json}}</div>
+  <div class="card" *ngIf="cutomers">
+    <div class="card-header"> Customers</div>
+    <div class="card-body">
+      <div *ngIf="searchFormGroup">
+        <form [formGroup]="searchFormGroup" (ngSubmit)="handleSearchCustomers()">
+          <div class="input-group">
+            <label class="input-group-text">Keyword :</label>
+            <!-- USE formControlName for TWo DataBinding-->
+            <input type="text" formControlName="keyword" placeholder="Search : Enter an account name here"
+                   class="form-control">
+            <button class="btn btn-info">Search <i class="bi bi-search"></i></button>
+          </div>
+        </form>
+      </div>
+      <table class="table">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th> Name</th>
+          <th> Email</th>
+          <th> Action</th>
+          <th> Open</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let c of cutomers">
+          <td> {{c.id}} </td>
+          <td> {{c.name}} </td>
+          <td> {{c.email}} </td>
+          <td>
+            <button (click)="deleteCustomer(c)" class="btn btn-danger"><span class="bi bi-trash"></span> Delete</button>
+          </td>
+          <td>
+            <button (click)="handleCustomerAccounts(c)" class="btn btn-success"><span
+              class="bi bi-currency-dollar"></span> Accounts
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>

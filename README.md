@@ -1,4 +1,25 @@
-# DigitalBankingWeb
+# EShopWebAngular
+
+<h3>*This is an simple Angular FrontEnd web.* </h3>
+
+<h4>Keyword: Spring Boot, Angular, REST FULL API, API integration</h4>
+
+
+This a simple and  basic banking Web developed <strong>eBankWeb_Angular</strong> developped using angular (TypeScript) As front End and Spring Boot as the BackEnd which incorporates some basic utilities (fonctions) of a web modern banking 
+ 
+<h4>HOW TO USE THIS PROJECT ? </h4>
+
+STEP 1: Clone this repository LIKE THIS: <strong>git clone git@github.com:binpc17/eBankWeb_Angular.git</strong><br>
+
+STEP 2:  To install all dependecies, you need to execute this ligne : <strong>npm install </strong><br>
+
+STEP 3: You need to install the backend of this project developped using Spring Boot, <strong> Follow all this step described here at this link </strong>: 
+https://github.com/binpc17/eBanking_SpringBoot
+
+
+IF you need more assistance please email at : binpc17@gmail.com AND hello@egozola.com
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
